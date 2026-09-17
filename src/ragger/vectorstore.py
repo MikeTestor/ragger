@@ -4,7 +4,7 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 
-from ragger.config import Config
+from core.config import Config
 
 
 def get_embeddings(config: Config) -> HuggingFaceEmbeddings:

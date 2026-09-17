@@ -6,7 +6,7 @@ models) since only langchain-openai is in requirements.txt.
 
 from collections.abc import Callable
 
-from ragger.config import Config
+from core.config import Config
 
 DEFAULT_MODELS = {
     "anthropic": "claude-sonnet-5",

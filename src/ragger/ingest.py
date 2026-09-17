@@ -5,8 +5,8 @@ Usage: python -m ragger.ingest <source_dir>
 
 import sys
 
-from ragger.config import load_config
-from ragger.ingestion import load_documents, split_documents
+from core.config import load_config
+from chunking.ingestion import load_documents, split_documents
 from ragger.vectorstore import add_documents, get_vectorstore
 
 

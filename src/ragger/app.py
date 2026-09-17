@@ -2,7 +2,7 @@
 
 import gradio as gr
 
-from ragger.config import load_config
+from core.config import load_config
 from ragger.rag import answer
 from ragger.vectorstore import get_vectorstore
 

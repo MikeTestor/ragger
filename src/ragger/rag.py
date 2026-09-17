@@ -2,7 +2,7 @@
 
 from langchain_chroma import Chroma
 
-from ragger.config import Config
+from core.config import Config
 from ragger.llm import get_chat_fn
 
 SYSTEM_PROMPT = (
