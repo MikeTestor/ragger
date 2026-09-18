@@ -13,9 +13,11 @@ dist/
 # Jupyter
 .ipynb_checkpoints/
 
-# Vector store / data (regenerate via ingestion, don't commit)
-database/*
-!database/.gitkeep
+# Vector store / data (regenerate via ingestion, don't commit).
+# Keep the folder structure itself via .gitkeep placeholders.
+database/**
+!database/**/
+!**/.gitkeep
 
 # Logs & OS
 *.log
