@@ -29,13 +29,19 @@ python -m ragger.ingest path/to/docs
 Launch the chat UI:
 
 ```bash
-python -m ragger.app
+python -m user_interface.app
 ```
 
 ## Layout
 
-- `src/ragger/` — library code: config, ingestion, vector store, LLM
-  providers, RAG pipeline, Gradio app.
+- `src/file_preparing/` — stage 1: load raw files and clean them (e.g. strip
+  HTML boilerplate).
+- `src/chunking/` — stage 2: split cleaned documents into chunks.
+- `src/embedding/` — stage 3: embed chunks and store them in Chroma.
+- `src/ragger/` — RAG glue: config-driven CLI (`ingest.py`), retrieval +
+  generation (`rag.py`), and the LLM provider abstraction (`llm.py`).
+- `src/user_interface/` — stage 5: the Gradio chat app.
+- `src/core/` — shared foundation (env-based config) used by every stage.
 - `notebooks/` — exploration notebooks.
 - `database/` — local Chroma persistence directory (gitignored).
 

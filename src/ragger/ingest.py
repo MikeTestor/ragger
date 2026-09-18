@@ -8,7 +8,7 @@ import sys
 from core.config import load_config
 from file_preparing.loading import load_documents
 from chunking.chunking import split_documents
-from ragger.vectorstore import add_documents, get_vectorstore
+from embedding.vectorstore import add_documents, get_vectorstore
 
 
 def main() -> None:
