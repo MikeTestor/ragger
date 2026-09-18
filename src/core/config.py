@@ -23,7 +23,7 @@ class Config:
 
 def load_config() -> Config:
     return Config(
-        llm_provider=os.environ.get("LLM_PROVIDER", "anthropic"),
+        llm_provider=os.environ.get("LLM_PROVIDER", "openai"),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY"),
         openai_api_key=os.environ.get("OPENAI_API_KEY"),
         google_api_key=os.environ.get("GOOGLE_API_KEY"),
